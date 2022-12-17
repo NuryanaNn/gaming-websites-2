@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d1f1f;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3%;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+header .navigation{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header .navigation li{
+    margin-right: 20px;
+    color: white;
+}
+
+header .navigation li i{
+    margin-right: 5px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: white;
+}
+
+header .navigation li button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid orange;
+    padding: 8px 10px;
+}
+
+.banner{
+    background-image: url('banner.png');
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .contentText{
+    max-width: 500px;
+    margin: auto;
+}
+
+.banner .title{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.banner .title::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ff8000;
+    bottom: -5px;
+}
+
+.banner .title h5{
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.banner h2{
+    color: white;
+    font-size: 38px;
+    line-height: 50px;
+}
+
+.banner span{
+    background-color: #ff8000;
+    color: black;
+}
+
+.banner p{
+    color: white;
+}
+
+/* Carousel Content */
+.carouselContent{
+    padding: 0 2%;
+    margin-top: -200px;
+}
+
+.carouselContent .card{
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+}
+
+.carouselContent .card .content{
+    display: flex;
+}
+
+.carouselContent img{
+    margin-right: 15px;
+}
+
+.carouselContent ul{
+    list-style: none;
+}
+
+.carouselContent .rating{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.carouselContent .rating i{
+    color: gold;
+}
+
+.carouselContent h3{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.carouselContent p{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.carouselContent button{
+    background-color: #ff8000;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+
+/* About Game Zone */
+.gameZone{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameZone img{
+    margin-right: 30px;
+}
+
+.gameZone .content{
+    max-width: 450px;
+}
+
+.gameZone h5{
+    margin-bottom: 50px;
+    color: #ff8000;
+    font-size: 20px;
+}
+
+.gameZone h3{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.gameZone p{
+    color: white;
+}
+
+.gameZone .teks1{
+    margin-bottom: 15px;
+}
+
+.gameZone button{
+    background-color: #ff8000;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 30px;
+}
+
+
+/* top Game */
+.topGame{
+    margin-top: 50px;
+    background-color: #191a1a;
+    padding: 20px;
+}
+
+.topGame .title{
+    text-align: center;
+}
+
+.topGame .title h5{
+    color: #ff8000;
+    margin-bottom: 10px;
+}
+
+.topGame .title h3{
+    color: white;
+    font-size: 27px;
+}
+
+.topGameWrapper{
+    margin-top: 80px;
+    padding: 0 2%;
+}
+
+.topGameWrapper .card{
+    width: 200px;
+}
+
+.topGameWrapper .card img{
+    width: 100%;
+}
+
+.topGameWrapper .card h3{
+    color: white;
+    margin-top: 10px;
+}
+
+.topGameWrapper .card ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.topGameWrapper .card ul li{
+    margin-right: 10px;
+}
+
+.topGameWrapper .card i{
+    color: gold;
+}
+
+/* Trailer */
+.trailer{
+    margin-top: 100px;
+}
+
+.trailer h5{
+    color: #ff8000;
+    margin-bottom: 20px;
+}
+
+.trailer h3{
+    color: white;
+}
+
+.trailer .title{
+    text-align: center;
+}
+
+.trailer img{
+    margin-top: 30px;
+}
+
+/* Shop */
+.shop{
+    margin-top: 100px;
+    background-color: #191a1a;
+    padding: 20px 0;
+}
+
+.shop .title{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.shop .title h5{
+    color: #ff8000;
+    margin-bottom: 10px;
+}
+
+.shop .title h3{
+    color: #fff;
+    font-size: 20px;
+}
+
+.shopContent{
+    padding: 0 2%;
+}
+
+.shop .card{
+    max-width: 300px;
+}
+
+.shop ul{
+    display: flex;
+    list-style: none;
+    margin:10px 0;
+}
+
+.shop ul li{
+    margin-right: 10px;
+}
+
+.shop ul i{
+    color: gold;
+}
+
+.shop h3{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.shop .price{
+    color: #ff8000;
+    font-size: 15px;
+}
+
+.blog{
+    margin-top: 50px;
+}
+
+.blog .title{
+    text-align: center;
+}
+
+.blog .title h5{
+    color: #ff8000;
+    margin-bottom: 10px;
+}
+
+.blog .title h3{
+    color: #fff;
+}
+
+.blog .blogContent{
+    margin-top: 40px;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog .blogContent .card{
+    max-width: 350px;
+}
+
+.blogContent .textContent{
+    margin-top: 20px;
+}
+
+.blogContent .textContent ul{
+    list-style: none;
+    display: flex;
+}
+
+.blogContent ul li{
+    margin-right: 20px;
+    color: white;
+}
+
+.blogContent ul li i{
+    margin-right: 5px;
+    color: #ff8000;
+}
+
+.blog .card h3{
+    margin: 10px 0;
+    color: #fff;
+}
+
+.blog p{
+    color: #fff;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 2%;
+    margin-top: 100px;
+    background-color: #191a1a;
+}
+
+.footer-1, .footer-2, .footer-3, .footer-4{
+    max-width: 300px;
+}
+
+.footer-1 p{
+    color: white;
+    margin-top: 15px;
+}
+
+.footer-2 h3, .footer-3 h3, .footer-4 h3{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer-2 ul, .footer-3 ul{
+    list-style: none;
+}
+
+.footer-2 li, .footer-3 li{
+    margin-bottom: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
